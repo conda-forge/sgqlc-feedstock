@@ -1,5 +1,5 @@
 {% set name = "sgqlc" %}
-{% set version = "13.0" %}
+{% set version = "14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e2cd53148dce702f7b9eb9b4a9b1ec5b83efb1d21e3f117f0ce3a76b1721024b
+  sha256: 5d85835d0a9e1e0dd3350a804004d8c5c5ba40f30f32e3bc5d6e2b544f06fe0a
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - sgqlc-codegen = sgqlc.codegen:main
 
@@ -37,7 +37,7 @@ about:
   home: https://sgqlc.readthedocs.io/
   license: ISC
   license_file: LICENSE
-  summary: 'Simple GraphQL Client'
+  summary: Simple GraphQL Client
   dev_url: https://github.com/profusion/sgqlc
 
 extra:
