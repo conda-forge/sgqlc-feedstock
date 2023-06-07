@@ -1,11 +1,11 @@
-About sgqlc
-===========
+About sgqlc-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sgqlc-feedstock/blob/main/LICENSE.txt)
 
 Home: https://sgqlc.readthedocs.io/
 
 Package license: ISC
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sgqlc-feedstock/blob/main/LICENSE.txt)
 
 Summary: Simple GraphQL Client
 
