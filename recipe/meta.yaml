@@ -18,11 +18,14 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
+    - poetry
   run:
-    - python >=3.6
-    - graphql-core
+    - python >=3.7
+    - graphql-core >=3.1.7
+    - requests
+    - websocket-client
 
 test:
   imports:
