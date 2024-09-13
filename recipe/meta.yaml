@@ -1,5 +1,5 @@
 {% set name = "sgqlc" %}
-{% set version = "16.3" %}
+{% set version = "16.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: be08857775aa3e65ef7b2c1f0cdcc65dd5794907b162b393c189187fee664558
+  sha256: a1a32db1c573edae229dbb61f6ae0a546aecceaaed2bac0652992a73e8c95017
 
 build:
   noarch: python
