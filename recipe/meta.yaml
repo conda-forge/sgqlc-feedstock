@@ -1,5 +1,5 @@
 {% set name = "sgqlc" %}
-{% set version = "16.4" %}
+{% set version = "16.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a1a32db1c573edae229dbb61f6ae0a546aecceaaed2bac0652992a73e8c95017
+  sha256: 93edcd29ee138f5305d13f211a2b2091bd77873c404c87b87ae16a4023c62d4a
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - sgqlc-codegen = sgqlc.codegen:main
